@@ -284,9 +284,11 @@ const Index = () => {
                     className="min-h-32 text-base"
                   />
                 </div>
-                <Button type="submit" size="lg" className="w-full text-lg glow-effect">
-                  <Icon name="Send" size={20} className="mr-2" />
-                  Отправить заявку
+                <Button type="button" size="lg" className="w-full text-lg glow-effect" asChild>
+                  <a href="https://t.me/DarkSoulMXK" target="_blank" rel="noopener noreferrer">
+                    <Icon name="Send" size={20} className="mr-2" />
+                    Отправить заявку
+                  </a>
                 </Button>
               </form>
               <div className="mt-8 pt-8 border-t">

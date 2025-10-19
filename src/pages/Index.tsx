@@ -82,9 +82,8 @@ const Index = () => {
         <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <div className="relative">
-              <Icon name="Key" className="text-primary neon-pink" size={28} />
-              <span className="absolute -top-1 -right-1 text-red-500">❤️</span>
-              <span className="absolute -bottom-1 -right-2 text-sm">🔗</span>
+              <Icon name="Heart" className="text-primary neon-pink" size={28} />
+              <Icon name="Wrench" className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 neon-cyan" size={14} />
             </div>
             <span className="text-2xl font-bold neon-pink">Муж на час</span>
           </div>

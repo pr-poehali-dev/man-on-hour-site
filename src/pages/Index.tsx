@@ -118,10 +118,6 @@ const Index = () => {
               </div>
               <div className="mt-8 flex gap-8">
                 <div>
-                  <div className="text-3xl font-bold text-primary">500+</div>
-                  <div className="text-sm text-muted-foreground">Выполненных заказов</div>
-                </div>
-                <div>
                   <div className="text-3xl font-bold text-primary">5.0</div>
                   <div className="text-sm text-muted-foreground">Средний рейтинг</div>
                 </div>

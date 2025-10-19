@@ -81,7 +81,11 @@ const Index = () => {
       <header className="fixed top-0 w-full bg-black/80 backdrop-blur-sm z-50 border-b border-purple-500/30">
         <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <Icon name="Wrench" className="text-primary neon-pink" size={28} />
+            <div className="relative">
+              <Icon name="Key" className="text-primary neon-pink" size={28} />
+              <span className="absolute -top-1 -right-1 text-red-500">❤️</span>
+              <span className="absolute -bottom-1 -right-2 text-sm">🔗</span>
+            </div>
             <span className="text-2xl font-bold neon-pink">Муж на час</span>
           </div>
           <div className="hidden md:flex gap-8">

@@ -105,8 +105,7 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in">
               <h1 className="text-5xl md:text-6xl font-extrabold mb-6 leading-tight">
-                Профессиональный
-                <span className="neon-pink block">муж на час</span>
+                <span className="neon-pink block">МУЖ на ЧАС</span>
               </h1>
               <p className="text-xl text-muted-foreground mb-8">
                 Ремонт, сантехника, электрика, сборка мебели + расслабляющий массаж

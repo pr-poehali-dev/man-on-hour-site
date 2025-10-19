@@ -297,7 +297,7 @@ const Index = () => {
                   <div>
                     <Icon name="Send" size={24} className="mx-auto mb-2 neon-cyan" />
                     <div className="font-semibold neon-cyan">Telegram</div>
-                    <div className="text-purple-300">@muzhnachas</div>
+                    <div className="text-purple-300">@DarkSoulMXK</div>
                   </div>
                   <div>
                     <Icon name="MapPin" size={24} className="mx-auto mb-2 neon-purple" />

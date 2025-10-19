@@ -200,8 +200,10 @@ const Index = () => {
                   </li>
                 ))}
               </ul>
-              <Button size="lg" className="glow-effect">
-                Записаться на массаж
+              <Button size="lg" className="glow-effect" asChild>
+                <a href="https://wa.me/79059442221" target="_blank" rel="noopener noreferrer">
+                  Записаться на массаж
+                </a>
               </Button>
             </div>
           </div>

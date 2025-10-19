@@ -295,9 +295,9 @@ const Index = () => {
                     <div className="text-purple-300">+7 (999) 123-45-67</div>
                   </div>
                   <div>
-                    <Icon name="Mail" size={24} className="mx-auto mb-2 neon-cyan" />
-                    <div className="font-semibold neon-cyan">Email</div>
-                    <div className="text-purple-300">info@muzhnachas.ru</div>
+                    <Icon name="Send" size={24} className="mx-auto mb-2 neon-cyan" />
+                    <div className="font-semibold neon-cyan">Telegram</div>
+                    <div className="text-purple-300">@muzhnachas</div>
                   </div>
                   <div>
                     <Icon name="MapPin" size={24} className="mx-auto mb-2 neon-purple" />

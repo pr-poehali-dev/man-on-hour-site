@@ -92,9 +92,11 @@ const Index = () => {
             <a href="#reviews" className="hover:text-primary transition-colors neon-text">Отзывы</a>
             <a href="#contact" className="hover:text-primary transition-colors neon-text">Контакты</a>
           </div>
-          <Button size="sm" className="hidden md:block glow-effect">
-            <Icon name="Phone" size={16} className="mr-2" />
-            Позвонить
+          <Button size="sm" className="hidden md:block glow-effect" asChild>
+            <a href="https://t.me/DarkSoulMXK" target="_blank" rel="noopener noreferrer">
+              <Icon name="Send" size={16} className="mr-2" />
+              Telegram @DarkSoulMXK
+            </a>
           </Button>
         </nav>
       </header>

@@ -108,7 +108,7 @@ const Index = () => {
                 <span className="neon-pink block">МУЖ на ЧАС</span>
               </h1>
               <p className="text-xl text-muted-foreground mb-8">
-                Ремонт, сантехника, электрика, сборка мебели + расслабляющий массаж
+                Ремонт, сантехника, электрика, сборка мебели + расслабляющий массаж + ремонт душевных ран
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg" variant="outline" className="text-lg" asChild>

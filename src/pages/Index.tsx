@@ -129,10 +129,6 @@ const Index = () => {
                 alt="Профессиональный мастер"
                 className="rounded-2xl shadow-2xl w-full"
               />
-              <div className="absolute -bottom-6 -right-6 bg-purple-900/80 text-white p-6 rounded-xl glow-effect neon-border border-purple-500">
-                <Icon name="Award" size={32} className="neon-purple" />
-                <div className="mt-2 font-bold neon-purple">Опыт 10+ лет</div>
-              </div>
             </div>
           </div>
         </div>

@@ -6,33 +6,33 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 220 15% 20%;
+    --background: 280 50% 5%;
+    --foreground: 0 0% 100%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 220 15% 20%;
+    --card: 280 40% 10%;
+    --card-foreground: 0 0% 100%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 220 15% 20%;
+    --popover: 280 40% 10%;
+    --popover-foreground: 0 0% 100%;
 
-    --primary: 18 95% 54%;
+    --primary: 320 100% 50%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 199 89% 48%;
+    --secondary: 280 100% 60%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 210 40% 96%;
-    --muted-foreground: 220 10% 50%;
+    --muted: 280 30% 20%;
+    --muted-foreground: 280 10% 70%;
 
-    --accent: 199 89% 48%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 180 100% 50%;
+    --accent-foreground: 280 50% 5%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
-    --ring: 18 95% 54%;
+    --border: 280 30% 25%;
+    --input: 280 30% 15%;
+    --ring: 320 100% 50%;
 
     --radius: 0.75rem;
 
@@ -100,6 +100,7 @@
   body {
     @apply bg-background text-foreground;
     font-family: "Open Sans", sans-serif;
+    background: linear-gradient(135deg, #0a0015 0%, #1a0a2e 50%, #0f0520 100%);
   }
 
   h1,
@@ -111,4 +112,56 @@
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
   }
+}
+
+.neon-text {
+  text-shadow:
+    0 0 10px currentColor,
+    0 0 20px currentColor,
+    0 0 30px currentColor,
+    0 0 40px currentColor;
+}
+
+.neon-pink {
+  color: #ff006e;
+  text-shadow:
+    0 0 10px #ff006e,
+    0 0 20px #ff006e,
+    0 0 30px #ff006e,
+    0 0 40px #ff006e,
+    0 0 70px #ff006e;
+}
+
+.neon-purple {
+  color: #b833ff;
+  text-shadow:
+    0 0 10px #b833ff,
+    0 0 20px #b833ff,
+    0 0 30px #b833ff,
+    0 0 40px #b833ff,
+    0 0 70px #b833ff;
+}
+
+.neon-cyan {
+  color: #00f5ff;
+  text-shadow:
+    0 0 10px #00f5ff,
+    0 0 20px #00f5ff,
+    0 0 30px #00f5ff,
+    0 0 40px #00f5ff,
+    0 0 70px #00f5ff;
+}
+
+.neon-border {
+  box-shadow:
+    0 0 10px currentColor,
+    0 0 20px currentColor,
+    inset 0 0 10px currentColor;
+  border: 2px solid currentColor;
+}
+
+.glow-effect {
+  box-shadow:
+    0 0 20px rgba(255, 0, 110, 0.5),
+    0 0 40px rgba(184, 51, 255, 0.3);
 }

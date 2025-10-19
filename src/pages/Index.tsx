@@ -22,31 +22,36 @@ const Index = () => {
       icon: "Hammer",
       title: "Мелкий ремонт",
       description: "Все виды мелкого ремонта: покраска, шпаклевка, замена замков и многое другое",
-      color: "bg-orange-50 hover:bg-orange-100"
+      color: "bg-purple-900/40 hover:bg-purple-900/60 border-purple-500",
+      neon: "neon-purple"
     },
     {
       icon: "Wrench",
       title: "Сантехника",
       description: "Установка и ремонт сантехники, устранение протечек, замена смесителей",
-      color: "bg-blue-50 hover:bg-blue-100"
+      color: "bg-pink-900/40 hover:bg-pink-900/60 border-pink-500",
+      neon: "neon-pink"
     },
     {
       icon: "Zap",
       title: "Электрика",
       description: "Монтаж розеток, выключателей, люстр. Замена проводки и диагностика",
-      color: "bg-yellow-50 hover:bg-yellow-100"
+      color: "bg-cyan-900/40 hover:bg-cyan-900/60 border-cyan-500",
+      neon: "neon-cyan"
     },
     {
       icon: "Package",
       title: "Сборка мебели",
       description: "Профессиональная сборка любой мебели: шкафы, кухни, столы, кровати",
-      color: "bg-green-50 hover:bg-green-100"
+      color: "bg-purple-900/40 hover:bg-purple-900/60 border-purple-500",
+      neon: "neon-purple"
     },
     {
       icon: "Heart",
       title: "Массаж",
       description: "Расслабляющий и лечебный массаж. Снятие напряжения и восстановление сил",
-      color: "bg-pink-50 hover:bg-pink-100"
+      color: "bg-pink-900/40 hover:bg-pink-900/60 border-pink-500",
+      neon: "neon-pink"
     }
   ];
 
@@ -73,31 +78,32 @@ const Index = () => {
 
   return (
     <div className="min-h-screen">
-      <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 border-b">
+      <header className="fixed top-0 w-full bg-black/80 backdrop-blur-sm z-50 border-b border-purple-500/30">
         <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <Icon name="Wrench" className="text-primary" size={28} />
-            <span className="text-2xl font-bold text-primary">Муж на час</span>
+            <Icon name="Wrench" className="text-primary neon-pink" size={28} />
+            <span className="text-2xl font-bold neon-pink">Муж на час</span>
           </div>
           <div className="hidden md:flex gap-8">
-            <a href="#services" className="hover:text-primary transition-colors">Услуги</a>
-            <a href="#reviews" className="hover:text-primary transition-colors">Отзывы</a>
-            <a href="#contact" className="hover:text-primary transition-colors">Контакты</a>
+            <a href="#services" className="hover:text-primary transition-colors neon-text">Услуги</a>
+            <a href="#reviews" className="hover:text-primary transition-colors neon-text">Отзывы</a>
+            <a href="#contact" className="hover:text-primary transition-colors neon-text">Контакты</a>
           </div>
-          <Button size="sm" className="hidden md:block">
+          <Button size="sm" className="hidden md:block glow-effect">
             <Icon name="Phone" size={16} className="mr-2" />
             Позвонить
           </Button>
         </nav>
       </header>
 
-      <section className="pt-32 pb-20 px-4 bg-gradient-to-br from-orange-50 via-white to-blue-50">
-        <div className="container mx-auto">
+      <section className="pt-32 pb-20 px-4 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 via-black to-pink-900/20"></div>
+        <div className="container mx-auto relative z-10">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in">
               <h1 className="text-5xl md:text-6xl font-extrabold mb-6 leading-tight">
                 Профессиональный
-                <span className="text-primary block">муж на час</span>
+                <span className="neon-pink block">муж на час</span>
               </h1>
               <p className="text-xl text-muted-foreground mb-8">
                 Ремонт, сантехника, электрика, сборка мебели + расслабляющий массаж
@@ -133,33 +139,34 @@ const Index = () => {
                 alt="Профессиональный мастер"
                 className="rounded-2xl shadow-2xl w-full"
               />
-              <div className="absolute -bottom-6 -right-6 bg-secondary text-white p-6 rounded-xl shadow-xl">
-                <Icon name="Award" size={32} />
-                <div className="mt-2 font-bold">Опыт 10+ лет</div>
+              <div className="absolute -bottom-6 -right-6 bg-purple-900/80 text-white p-6 rounded-xl glow-effect neon-border border-purple-500">
+                <Icon name="Award" size={32} className="neon-purple" />
+                <div className="mt-2 font-bold neon-purple">Опыт 10+ лет</div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="services" className="py-20 px-4">
-        <div className="container mx-auto">
+      <section id="services" className="py-20 px-4 relative">
+        <div className="absolute inset-0 bg-gradient-to-b from-black via-purple-950/30 to-black"></div>
+        <div className="container mx-auto relative z-10">
           <div className="text-center mb-16 animate-slide-up">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">Наши услуги</h2>
-            <p className="text-xl text-muted-foreground">Качественно и быстро решаем любые бытовые задачи</p>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 neon-purple">Наши услуги</h2>
+            <p className="text-xl text-cyan-300">Качественно и быстро решаем любые бытовые задачи</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((service, index) => (
               <Card 
                 key={index} 
-                className={`${service.color} border-0 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 cursor-pointer`}
+                className={`${service.color} border-2 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 cursor-pointer glow-effect`}
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <CardHeader>
-                  <div className="w-14 h-14 bg-white rounded-xl flex items-center justify-center mb-4 shadow-md">
-                    <Icon name={service.icon as any} size={28} className="text-primary" />
+                  <div className="w-14 h-14 bg-black/60 rounded-xl flex items-center justify-center mb-4 shadow-md neon-border border-current">
+                    <Icon name={service.icon as any} size={28} className={service.neon} />
                   </div>
-                  <CardTitle className="text-2xl">{service.title}</CardTitle>
+                  <CardTitle className={`text-2xl ${service.neon}`}>{service.title}</CardTitle>
                   <CardDescription className="text-base text-foreground/70">
                     {service.description}
                   </CardDescription>
@@ -176,8 +183,9 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="py-20 px-4 bg-gradient-to-br from-blue-50 to-orange-50">
-        <div className="container mx-auto">
+      <section className="py-20 px-4 relative">
+        <div className="absolute inset-0 bg-gradient-to-br from-pink-950/30 via-black to-purple-950/30"></div>
+        <div className="container mx-auto relative z-10">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1">
               <img 
@@ -187,7 +195,7 @@ const Index = () => {
               />
             </div>
             <div className="order-1 md:order-2">
-              <h2 className="text-4xl font-bold mb-6">Дополнительная услуга: Массаж</h2>
+              <h2 className="text-4xl font-bold mb-6 neon-pink">Дополнительная услуга: Массаж</h2>
               <p className="text-lg text-muted-foreground mb-6">
                 После тяжелой рабочей недели или напряженных будней — расслабьтесь с профессиональным массажем.
               </p>
@@ -199,14 +207,14 @@ const Index = () => {
                   "Индивидуальный подход к каждому клиенту"
                 ].map((item, index) => (
                   <li key={index} className="flex items-center gap-3">
-                    <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
-                      <Icon name="Check" size={16} className="text-white" />
+                    <div className="w-6 h-6 bg-pink-600 rounded-full flex items-center justify-center flex-shrink-0 neon-border border-pink-500">
+                      <Icon name="Check" size={16} className="text-white neon-pink" />
                     </div>
                     <span className="text-lg">{item}</span>
                   </li>
                 ))}
               </ul>
-              <Button size="lg">
+              <Button size="lg" className="glow-effect">
                 Записаться на массаж
               </Button>
             </div>
@@ -214,15 +222,16 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="reviews" className="py-20 px-4">
-        <div className="container mx-auto">
+      <section id="reviews" className="py-20 px-4 relative">
+        <div className="absolute inset-0 bg-gradient-to-b from-black via-cyan-950/20 to-black"></div>
+        <div className="container mx-auto relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">Отзывы клиентов</h2>
-            <p className="text-xl text-muted-foreground">Нам доверяют сотни довольных клиентов</p>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 neon-cyan">Отзывы клиентов</h2>
+            <p className="text-xl text-purple-300">Нам доверяют сотни довольных клиентов</p>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
             {reviews.map((review, index) => (
-              <Card key={index} className="hover:shadow-xl transition-shadow">
+              <Card key={index} className="bg-purple-900/30 border-2 border-purple-500/30 hover:shadow-xl transition-shadow glow-effect">
                 <CardHeader>
                   <div className="flex items-center gap-4 mb-4">
                     <div className="text-4xl">{review.avatar}</div>
@@ -245,13 +254,14 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="contact" className="py-20 px-4 bg-gradient-to-br from-primary/5 to-secondary/5">
-        <div className="container mx-auto max-w-4xl">
+      <section id="contact" className="py-20 px-4 relative">
+        <div className="absolute inset-0 bg-gradient-to-br from-purple-950/40 via-black to-pink-950/40"></div>
+        <div className="container mx-auto max-w-4xl relative z-10">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">Свяжитесь с нами</h2>
-            <p className="text-xl text-muted-foreground">Оставьте заявку и мы свяжемся с вами в течение 15 минут</p>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 neon-purple">Свяжитесь с нами</h2>
+            <p className="text-xl text-pink-300">Оставьте заявку и мы свяжемся с вами в течение 15 минут</p>
           </div>
-          <Card className="border-0 shadow-2xl">
+          <Card className="bg-black/60 border-2 border-pink-500/50 shadow-2xl glow-effect">
             <CardContent className="p-8">
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
@@ -282,7 +292,7 @@ const Index = () => {
                     className="min-h-32 text-base"
                   />
                 </div>
-                <Button type="submit" size="lg" className="w-full text-lg">
+                <Button type="submit" size="lg" className="w-full text-lg glow-effect">
                   <Icon name="Send" size={20} className="mr-2" />
                   Отправить заявку
                 </Button>
@@ -290,19 +300,19 @@ const Index = () => {
               <div className="mt-8 pt-8 border-t">
                 <div className="grid md:grid-cols-3 gap-6 text-center">
                   <div>
-                    <Icon name="Phone" size={24} className="mx-auto mb-2 text-primary" />
-                    <div className="font-semibold">Телефон</div>
-                    <div className="text-muted-foreground">+7 (999) 123-45-67</div>
+                    <Icon name="Phone" size={24} className="mx-auto mb-2 neon-pink" />
+                    <div className="font-semibold neon-pink">Телефон</div>
+                    <div className="text-purple-300">+7 (999) 123-45-67</div>
                   </div>
                   <div>
-                    <Icon name="Mail" size={24} className="mx-auto mb-2 text-primary" />
-                    <div className="font-semibold">Email</div>
-                    <div className="text-muted-foreground">info@muzhnachas.ru</div>
+                    <Icon name="Mail" size={24} className="mx-auto mb-2 neon-cyan" />
+                    <div className="font-semibold neon-cyan">Email</div>
+                    <div className="text-purple-300">info@muzhnachas.ru</div>
                   </div>
                   <div>
-                    <Icon name="MapPin" size={24} className="mx-auto mb-2 text-primary" />
-                    <div className="font-semibold">Адрес</div>
-                    <div className="text-muted-foreground">г. Москва</div>
+                    <Icon name="MapPin" size={24} className="mx-auto mb-2 neon-purple" />
+                    <div className="font-semibold neon-purple">Адрес</div>
+                    <div className="text-purple-300">г. Москва</div>
                   </div>
                 </div>
               </div>
@@ -311,21 +321,21 @@ const Index = () => {
         </div>
       </section>
 
-      <footer className="bg-foreground text-background py-12 px-4">
+      <footer className="bg-black border-t border-purple-500/30 py-12 px-4">
         <div className="container mx-auto">
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div>
               <div className="flex items-center gap-2 mb-4">
-                <Icon name="Wrench" size={24} />
-                <span className="text-xl font-bold">Муж на час</span>
+                <Icon name="Wrench" size={24} className="neon-pink" />
+                <span className="text-xl font-bold neon-pink">Муж на час</span>
               </div>
-              <p className="text-background/80">
+              <p className="text-purple-300">
                 Профессиональные услуги по ремонту и обслуживанию вашего дома
               </p>
             </div>
             <div>
-              <h3 className="font-bold mb-4">Услуги</h3>
-              <ul className="space-y-2 text-background/80">
+              <h3 className="font-bold mb-4 neon-purple">Услуги</h3>
+              <ul className="space-y-2 text-purple-300">
                 <li>Мелкий ремонт</li>
                 <li>Сантехника</li>
                 <li>Электрика</li>
@@ -334,15 +344,15 @@ const Index = () => {
               </ul>
             </div>
             <div>
-              <h3 className="font-bold mb-4">Контакты</h3>
-              <ul className="space-y-2 text-background/80">
+              <h3 className="font-bold mb-4 neon-cyan">Контакты</h3>
+              <ul className="space-y-2 text-purple-300">
                 <li>+7 (999) 123-45-67</li>
                 <li>info@muzhnachas.ru</li>
                 <li>г. Москва</li>
               </ul>
             </div>
           </div>
-          <div className="border-t border-background/20 pt-8 text-center text-background/60">
+          <div className="border-t border-purple-500/20 pt-8 text-center text-purple-400">
             <p>© 2024 Муж на час. Все права защищены.</p>
           </div>
         </div>

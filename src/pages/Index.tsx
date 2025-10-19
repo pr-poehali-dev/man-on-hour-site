@@ -111,9 +111,11 @@ const Index = () => {
                 Ремонт, сантехника, электрика, сборка мебели + расслабляющий массаж
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" variant="outline" className="text-lg">
-                  <Icon name="MessageCircle" size={20} className="mr-2" />
-                  Написать в WhatsApp
+                <Button size="lg" variant="outline" className="text-lg" asChild>
+                  <a href="https://wa.me/79059442221" target="_blank" rel="noopener noreferrer">
+                    <Icon name="MessageCircle" size={20} className="mr-2" />
+                    Написать в WhatsApp
+                  </a>
                 </Button>
               </div>
               <div className="mt-8 flex gap-8">

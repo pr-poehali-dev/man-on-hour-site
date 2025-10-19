@@ -111,10 +111,6 @@ const Index = () => {
                 Ремонт, сантехника, электрика, сборка мебели + расслабляющий массаж
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="text-lg">
-                  <Icon name="Phone" size={20} className="mr-2" />
-                  Вызвать мастера
-                </Button>
                 <Button size="lg" variant="outline" className="text-lg">
                   <Icon name="MessageCircle" size={20} className="mr-2" />
                   Написать в WhatsApp
